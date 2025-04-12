@@ -1,77 +1,66 @@
-# Bank (DSA Course Project)
+# 🏦 DSA Bank Simulator (C++ Project)
 
-**Objective:** Assume that you own a Bank having 10 ATMs in a city. Design a Banking solution in
-C++ using all the features including STLs to mimic a real life bank.
+Welcome to the **DSA Bank Simulator**, a C++-based command-line application that models a functional bank system with multiple ATMs. This project integrates core data structures, object-oriented programming concepts, and Standard Template Library (STL) components to simulate real-world banking operations.
 
-## Table of contents
+---
 
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
+## 📚 Overview
 
-## General info
+This project offers a simulated banking environment operating in **two modes**:
 
-Bank works in two modes:
+1. **Banking Mode** – For bank-level operations like account management and ATM control.
+2. **ATM Mode** – Mimics the experience of using an ATM for basic customer transactions.
 
-1. [BANKING Mode](#banking-mode)
-2. [ATM Mode](#ATM-mode)
+Users can switch between these two modes using specific keyboard commands.
 
-to switch between the modes **_use command Z_**
+---
 
-### BANKING Mode
+## 💡 Features
 
-| Command | Description                    |
-| ------- | ------------------------------ |
-| S       | open bank                      |
-| O       | open an account                |
-| B       | balance enquiry                |
-| W       | withdrawal                     |
-| D       | deposit                        |
-| C       | close account                  |
-| A       | activate ATM                   |
-| U       | unlock ATM                     |
-| P       | print all accounts             |
-| I       | apply interest to all accounts |
-| E       | exit and close all accounts    |
+### 🏦 Banking Mode
 
-### ATM Mode
+Use command `Z` to enter or exit this mode.
 
-| Command | Description     |
-| ------- | --------------- |
-| X       | PIN change      |
-| F       | fund transfer   |
-| B       | balance enquiry |
-| W       | withdrawal      |
-| M       | mini statement  |
+| Command | Operation                        |
+| ------- | -------------------------------- |
+| S       | Start/open the bank              |
+| O       | Create a new account             |
+| B       | Check account balance            |
+| W       | Withdraw money                   |
+| D       | Deposit money                    |
+| C       | Close an account                 |
+| A       | Activate an ATM                  |
+| U       | Unlock an ATM                    |
+| P       | View all account details         |
+| I       | Apply interest to all accounts   |
+| E       | Exit system and close all files  |
 
-**_It also saves data from preveous execution and can load all info on the next execution_**
+### 🏧 ATM Mode
 
-## Technologies
+Available after activating an ATM.
 
-Project uses:
+| Command | Operation              |
+| ------- | ---------------------- |
+| X       | Change account PIN     |
+| F       | Transfer funds         |
+| B       | Balance inquiry        |
+| W       | Cash withdrawal        |
+| M       | Mini statement         |
 
-- C++
-- GNU Make
+🔄 **Persistent Storage**: All account and transaction details are saved to files and automatically restored on the next run.
 
-## Setup
+---
 
-- clone project
+## 🛠 Tech Stack
 
-```
-git clone https://github.com/raushankit/DSA-Bank.git
-```
+- **Language:** C++ (OOP, File Handling, STL)
+- **Build Tool:** GNU Make
 
-- to run project
+---
 
-```make
-cd src
-make run
-```
+## 🚀 Getting Started
 
-> > or
+### 🔧 Clone the Repository
 
-```
-cd src
-make
-./a.out
-```
+```bash
+git clone https://github.com/RaghavRanjeet/Bank.git
